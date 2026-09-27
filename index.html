@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kanelknoppen</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<h1>Kanelknoppen</h1>
+		<nav>
+			<ul>
+				<li><a href="#om-oss">Om oss</a></li>
+				<li><a href="#meny">Meny</a></li>
+				<li><a href="#galleri">Galleri</a></li>
+				<li><a href="#kontakt">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+    <section id="hem" class="hero">
+		<div class="hero-text">
+			<h2>Nybakat bröd varje dag</h2>
+			<p>Vi är ett litet bageri som bakar bröd och bullar från grunden varje morgon.</p>
+			<a href="#meny" class="knapp">Se menyn</a>
+		</div>
+		
+		<img src="bilder/hero.jpg" alt="Bröd och en kanelbulle" width="400" height="300">
+    </section>
+
+	<section id="om-oss">
+		<h2>Om oss</h2>
+		<p>Kanelknoppen startades 1987. Vi bakar allt själva varje dag, från bröd till bullar och kakor. Kom förbi och känn doften av nybakat!</p>
+	</section>
+
+    <section id="meny">
+		<h2>Meny</h2>
+		<div class="meny-grid">
+			<article class="kort">
+				<h3>Kanelbulle</h3>
+				<p>Klassisk kanelbulle med pärlsocker.</p>
+				<p class="pris">32 kr</p>
+			</article>
+
+			<article class="kort">
+				<h3>Surdegsbröd</h3>
+				<p>Hembakat surdegsbröd med knaprig skorpa.</p>
+				<p class="pris">65 kr</p>
+			</article>
+
+			<article class="kort">
+				<h3>Äppelkaka</h3>
+				<p>Äppelkaka med vaniljsås.</p>
+				<p class="pris">45 kr</p>
+			</article>
+
+			<article class="kort">
+				<h3>Ostfralla</h3>
+				<p>Nybakad fralla med ost.</p>
+				<p class="pris">28 kr</p>
+			</article>
+
+			<article class="kort">
+				<h3>Kaffe</h3>
+				<p>Nybryggt kaffe.</p>
+				<p class="pris">35 kr</p>
+			</article>
+
+			<article class="kort">
+				<h3>Fikapaket</h3>
+				<p>Kaffe + valfritt bakverk.</p>
+				<p class="pris">55 kr</p>
+			</article>
+		</div>
+    </section>
+
+	<section id="galleri">
+		<h2>Galleri</h2>
+
+		<div class="splide" id="galleri-splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img src="bilder/7-300x200.jpg" alt="Kanelbulle" width="300" height="200">
+					</li>
+
+					<li class="splide__slide">
+						<img src="bilder/dsc_6323-300x200.jpg" alt="Surdegsbröd" width="300" height="200">
+					</li>
+
+					<li class="splide__slide">
+						<img src="bilder/hamngarden_trosacom-300x200.jpg" alt="Bord i caféet" width="300" height="200">
+					</li>
+
+					<li class="splide__slide">
+						<img src="bilder/kanelbulle-300x200.jpg" alt="Tårtbit" width="300" height="200">
+					</li>
+
+					<li class="splide__slide">
+						<img src="bilder/raagsurdegsbroed.jpg" alt="Kopp kaffe" width="300" height="200">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="kontakt">
+		<h2>Kontakt</h2>
+		<div class="kontakt-flex">
+			<div>
+				<p>Rörstrandsgatan 14, Stockholm</p>
+				<p>Mån-fre: 07:00-18:00</p>
+				<p>Lördag: 08:00-16:00</p>
+				<p>Sön: 09:00-15:00</p>
+				<p>Tel: 08-123 456 78</p>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		var splide = new Splide('#galleri-splide', {
+			type: 'loop',
+			perPage: 3,
+			gap: '1rem',
+		});
+
+		splide.mount();
+	</script>
+</body>
+</html>
